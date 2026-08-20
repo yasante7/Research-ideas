@@ -12,6 +12,8 @@
 
 ---
 
+> **Household-level companion:** `household-level-ideas.md` holds eight further ideas with the household as the unit of analysis, stronger problem statements, and research gaps verified against the published literature rather than asserted. Start there if you want household welfare outcomes; use this file for the firm/trade-level cuts and for the concept-note mechanics (template, budget, timeline), which apply to both.
+
 ## What ACET is actually buying
 
 ACET is a policy institute, not a research council. It funds work that a finance ministry or trade ministry could act on inside a year. Every idea below is built to the same five-part shape, and you should keep that shape in the concept note:
