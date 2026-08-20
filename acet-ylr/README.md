@@ -43,6 +43,8 @@ Fit to ACET's *Growth with DEPTH* framing (Diversification, Export competitivene
 
 **Budget fit:** Excellent. Mostly desk work; one country visit for interviews. ~$15k comfortably.
 
+> **Deep dive:** `cbam-brief.md` covers what CBAM is, the regulatory timeline, the problem in three layers, the verified research gap, a draft problem statement, and the funding justification with a method-matched budget.
+
 ---
 
 ### 2. Did the raw-lithium export ban build a value chain, or just move the rents?
