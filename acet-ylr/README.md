@@ -12,6 +12,8 @@
 
 ---
 
+> **Theme deep dive — Innovation & Digital Policy:** `innovation-digital-policy.md` holds three pitch-ready ideas built on named regulations with commencement dates and statutory control groups (Startup Acts, Kenya's ride-hailing commission cap, digital credit regulation), plus five in brief.
+
 > **Household-level companion:** `household-level-ideas.md` holds eight further ideas with the household as the unit of analysis, stronger problem statements, and research gaps verified against the published literature rather than asserted. Start there if you want household welfare outcomes; use this file for the firm/trade-level cuts and for the concept-note mechanics (template, budget, timeline), which apply to both.
 
 ## What ACET is actually buying
