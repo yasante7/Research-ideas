@@ -86,6 +86,8 @@ Same topic. The second one has a debt in it.
 
 **Feasibility:** medium-high. The survey component is the main cost, and it is what makes the paper.
 
+> **Developed in full — and re-cut again:** see `backsliding-concept.md`. Greve & Lay (2022, *JAERE*) already provide quasi-experimental Ghanaian evidence on the extensive margin of backsliding, so this idea is now framed around the *intensive* margin (stack composition, objectively metered) and its consequence for the carbon credits financing African clean cooking. That document carries the full problem statement, identification, budget, risk table and a drafted 800-word note.
+
 ---
 
 ### 4. Digital ID as gatekeeper: putting a number on exclusion
