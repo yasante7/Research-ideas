@@ -12,6 +12,8 @@
 
 ---
 
+> **Gap assessment — PURE × enterprise upgrading:** `pure-upgrading-gaps.md` verifies the uploaded Consensus gap report against the economics literature it omitted, marks each claimed gap survives/narrowed/dead, and derives three fundable questions. Source PDF in `source/`.
+
 > **Fully developed concept:** `backsliding-concept.md` takes the clean-cooking backsliding idea to proposal grade — the price elasticity of the cooking-fuel stack and what it does to the carbon credits financing African clean cooking, with a drafted 800-word note.
 
 > **Theme deep dive — Innovation & Digital Policy:** `innovation-digital-policy.md` holds three pitch-ready ideas built on named regulations with commencement dates and statutory control groups (Startup Acts, Kenya's ride-hailing commission cap, digital credit regulation), plus five in brief.
