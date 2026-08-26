@@ -29,6 +29,19 @@ This does not make conversion exogenous. The same unobservables — entrepreneur
 
 The DCE is what makes this a research design rather than a survey. It is experimental, it costs nothing beyond instrument development, and it produces a crisp, quotable policy result: the ranked marginal willingness to expand production per complementary input.
 
+## Verified use (added after the literature review)
+
+Self-reported use cannot carry the headline measure. Hing et al. (2023) compared sensors against surveys for cookstoves in rural India and found 28-46% of households over-reporting, with surveys failing to detect long-term dis-adoption entirely — including among households that had bought the stove with their own money. Some households with zero sensor-recorded use still reported fuel savings.
+
+Sensors are out of budget. The affordable substitute is enumerator verification at the visit:
+
+- Equipment present, and functional on inspection
+- Physical evidence of recent use — ash and residue and product on racks for ovens; wear, connected load and charge-controller state for solar systems
+- Photograph of the equipment in situ
+- Breakdown history with dates, and whether repair was attempted and why not
+
+Report **both** the self-reported and the verified measure, and the discrepancy between them. That discrepancy extends Hing et al. from household stoves to productive assets in an African setting and is publishable independently of the main result.
+
 ## Recall design (guarding the event study)
 
 Retrospective recall is the weak point. Mitigate by restricting recall outcomes to **discrete, salient, infrequent** events rather than continuous quantities:
@@ -50,11 +63,21 @@ No existing dataset means the frame has to be constructed. Two sources, combined
 
 Adoption dates should span 2022–2026 to give the event study variation. Check this when assembling the frame; if adoption is bunched in a single year, the event study collapses and the DCE carries the design.
 
+## What the literature added
+
+Full review in `literature.md`. Four changes it forced:
+
+1. **The thesis is not novel — the magnitude is.** Pueyo et al. (2018), Pelz et al. (2021) and the Aarakit et al. (2024) systematic review have all established that energy access alone underdelivers for enterprises. Claiming "green technology is not enough" as a finding would read as not knowing the field. The contribution is the measured conversion rate and the constraint ranking.
+2. **There is a falsifiable prediction available.** Fafchamps et al. (2013), in urban Ghana, found no gain for women's subsistence enterprises from either cash or in-kind grants, but growth for larger women-owned firms from in-kind capital only. That implies conversion is **non-linear in baseline enterprise scale** — testable directly, and it turns a descriptive study into a theory-testing one.
+3. **A sharper gender mechanism than "norms".** Field et al. (2019) found women's returns were lower only where another household member also ran a business — capital was redirected, not badly used. One roster question measures it.
+4. **The DCE attributes should each answer a documented finding**, not intuition: capital form (flypaper effect, Fafchamps et al. 2013), training (Berge et al. 2015), supervision (Blattman et al. 2016), after-sales service (Mekonnen et al. 2020 — 80% of stove abandonment was breakage), market linkage (Pueyo et al. 2018).
+
 ## Known weaknesses to pre-empt
 
 - **Survivorship in the frame.** Enterprises that adopted and then failed may be absent from client lists. Ask surviving respondents about known exits in their cluster, and treat the conversion rate as an upper bound.
 - **Conversion is endogenous.** Stated plainly in the note rather than hidden.
 - **Stated-preference gap.** The DCE measures intended expansion, not realised expansion. Frame it as constraint ranking, not effect size.
+- **Scoop risk.** Owusu-Sekyere et al. (2024, *Energy Policy*) ran 700 Nigerian MSMEs through propensity-score matching and found solar adoption associated with 23-27% higher monthly earnings. Same method family, adjacent country, two years old. Cite it and differentiate explicitly: they estimate adoption to earnings across general MSMEs; this measures adoption to conversion to value addition inside one value chain, and ranks what closes the gap.
 - **Two chains, four regions** is ambitious on the budget. If costs run over, drop the Northern shea component first — it is the most expensive to reach and the least connected to the export-market mechanism.
 
 ## Fallback if the frame cannot be secured

@@ -4,36 +4,42 @@
 
 ## The policy problem
 
-Africa's green industrial policy is counted in units distributed. Ghana's Renewable Energy Master Plan, donor fisheries programmes and commercial solar distributors report dryers installed, fuel-efficient ovens disseminated and cold storage financed. None of these figures reveal whether the equipment still functions, whether it is used for production rather than household consumption, or whether it has changed what an enterprise makes and where it sells. Adoption is a procurement outcome. Industrial transformation requires that technology raise productivity, add value and move output into wider markets. The distance between the two is unmeasured, and policy cannot price what it cannot see.
+Green industrial policy in Africa is financed against units deployed. Results-based financing pays suppliers per verified device installed; national plans and donor programmes report dryers, ovens and cold storage disseminated. Deployment is a procurement outcome. Industrial transformation requires that equipment raise productivity, add value and move output into wider markets. If a substantial share of deployed productive-use equipment never enters production, these instruments are priced against the wrong metric — and no one currently knows the share.
+
+## What is already established, and what is not
+
+Two literatures converge here without meeting. Work on productive use of energy finds that access alone does not improve enterprise performance: Kenyan solar mini-grids produced no business gains after two years (Pueyo et al. 2018), and 75% of connected enterprises in electrified North Indian villages draw under 1 kWh per day, powering lighting only (Pelz et al. 2021). Separately, the microenterprise-capital literature shows that capital drops underperform for women — in urban Ghana, subsistence enterprises run by women gained nothing from either cash or in-kind grants, while larger women-owned firms grew only from in-kind capital (Fafchamps et al. 2013). Neither has measured what happens when the capital *is* the green technology, in a chain where processing determines market access.
 
 ## Research question
 
 **Conditional on adoption, what converts green processing technology into value addition — and which complementary input binds?**
 
-Three sub-questions follow. What share of adopters achieve sustained productive use, and how large is the productivity gap between converters and non-converters? Do labour-saving technologies (fuel-efficient ovens, solar water pumps) and productive-use technologies (solar dryers, solar refrigeration, powered milling) differ in conversion rates? Which complementary input — working capital, technical and maintenance skills, market linkage, or after-sales service — most raises an adopter's willingness to expand production?
+The capital literature yields a testable prediction rather than an open question: conversion should be near zero below a threshold of baseline enterprise scale and positive above it. A second hypothesis follows Field et al. (2019) — conversion failure should concentrate in households containing a second enterprise, where returns are redirected.
 
 ## Contribution
 
-This study does not estimate the average treatment effect of technology provision; that requires an equipment-randomised trial beyond the scale of any early-career grant. It answers a prior question that no existing dataset addresses: among enterprises that already hold the equipment, what separates those producing industrial output from those producing none? It delivers the first measured conversion rate for green processing technology in Ghana, and an experimentally identified ranking of the constraints that block conversion.
+Two deliverables. First, **a verified conversion rate**. Self-reported use is not credible for this purpose: sensor validation in India found 28–46% of households over-reporting stove use, with surveys missing dis-adoption entirely (Hing et al. 2023). Enumerators will inspect and photograph equipment for functionality and recent use, and the reported-versus-verified gap is itself a result — extending that finding from household stoves to productive assets in Africa. Second, **an experimentally identified ranking** of the constraints blocking conversion.
+
+This is not an impact evaluation; estimating the average effect of technology provision needs an equipment-randomised trial beyond any early-career grant. It answers the prior question: among enterprises already holding the equipment, what separates those producing industrial output from those producing none? The closest existing study estimates adoption-to-earnings across general Nigerian MSMEs by matching (Owusu-Sekyere et al. 2024); this measures conversion within a defined value chain and identifies what closes it.
 
 ## Setting and data
 
-Two women-dominated value chains with active green technology diffusion: coastal fish smoking and processing (Central and Western regions), where fuel-efficient Ahotor ovens cut fuelwood use and lower polycyclic aromatic hydrocarbon levels enough to affect eligibility for higher-value and export markets; and inland cassava and shea processing (Eastern and Northern regions), where solar drying and powered milling substitute for open-air drying and manual work.
+Two women-dominated chains with active diffusion: coastal fish smoking, where fuel-efficient Ahotor ovens cut fuelwood use and lower polycyclic aromatic hydrocarbons — traditional ovens exceed EU limits by seven to ten times, so oven type plausibly gates access to formal and export buyers; and inland cassava and shea processing, where solar drying and powered milling replace open-air drying. The Ahotor literature covers adoption drivers and product quality but not enterprise outcomes.
 
-Primary collection from 500 processing enterprises — approximately 300 adopters with adoption dates spanning 2022–2026, and 200 non-adopters in the same production clusters — drawn from distributor and programme client lists supplemented by cluster enumeration. Forty in-depth interviews follow the survey.
+Primary collection from 500 enterprises — some 300 adopters with adoption dates spanning 2022–2026, plus 200 non-adopters in the same clusters — from distributor and programme lists and cluster enumeration, with 40 in-depth interviews.
 
 ## Identification
 
-Three complementary strategies. First, a **retrospective enterprise panel**: adoption dates and discrete, well-recalled outcomes (months operated per year, market channels used, paid workers hired, equipment functioning) support an event study with enterprise fixed effects around the timing of adoption. Second, a **converter/non-converter comparison** holding adoption constant, which removes selection into adoption while remaining explicitly diagnostic rather than causal. Third — and cleanly experimental — a **discrete choice experiment** embedded in the survey, randomising support packages across finance, training, market-linkage and service attributes to identify which complementary input drives intended expansion. Three hundred adopters across eight choice tasks yield 2,400 choice observations, ample for mixed logit estimation.
+A retrospective enterprise panel supports an event study with enterprise fixed effects, using discrete well-recalled outcomes around adoption timing. A converter/non-converter comparison holds adoption constant, removing selection into adoption while remaining explicitly diagnostic. A discrete choice experiment, cleanly experimental, randomises support packages across five attributes each drawn from a documented finding: capital form, training, supervision, after-sales service and market linkage. Three hundred adopters across eight tasks yield 2,400 choice observations for mixed logit estimation.
 
 ## Outcomes
 
-Primary: **enterprise value added per hour of processing labour**. Secondary: sustained productive use; market channel reach beyond the immediate community; months of operation per year; paid employment created; spoilage and post-harvest loss; fuelwood and energy expenditure; and women's control over enterprise revenue. With roughly 165 converters against 135 non-converters, the design detects productivity differences of 0.33 standard deviations at 80% power.
+Primary: enterprise value added per hour of processing labour. Secondary: verified productive use; market channel reach; months operated per year; paid employment; spoilage; energy expenditure; and women's control over revenue. With roughly 165 converters against 135 non-converters, the design detects 0.33 standard deviations at 80% power.
 
 ## Policy relevance
 
-Ghana and its development partners subsidise green equipment acquisition. If a substantial share of subsidised equipment never enters production, the binding policy question is not how to distribute more units but how to bundle distribution with the complementary input that converts them. This study replaces adoption counts with a conversion metric that green industrial policy can actually target, and identifies experimentally which bundle to fund. It speaks directly to green value chains, green jobs, and the design of green industrial policy instruments.
+Ghana and its partners subsidise acquisition and pay per device deployed. If conversion is partial and predictable from enterprise scale, household structure and service access, the policy question is not how to distribute more units but how to target and bundle them — and results-based financing can be re-specified against a conversion metric this study makes measurable.
 
 ## Feasibility
 
-Twelve months: ethics clearance and instrument design (M1–2), pilot and enumerator training (M3), survey fieldwork (M4–5), qualitative fieldwork (M6), analysis (M7–8), working paper (M9–10), Accra validation workshop and policy brief (M11), dissemination (M12). Budgeted at USD 14,300 against the USD 15,000 ceiling.
+Clearance and instruments (M1–2), pilot and training (M3), survey (M4–5), qualitative work (M6), analysis (M7–8), working paper (M9–10), Accra validation workshop (M11), dissemination (M12). USD 14,300 against the 15,000 ceiling.
