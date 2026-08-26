@@ -63,7 +63,25 @@ No existing dataset means the frame has to be constructed. Two sources, combined
 
 Adoption dates should span 2022–2026 to give the event study variation. Check this when assembling the frame; if adoption is bunched in a single year, the event study collapses and the DCE carries the design.
 
-## What the literature added
+## What the deep search corrected (second pass)
+
+The first literature pass fixed the framing. The deep pass found three errors in the design itself.
+
+**1. The primary outcome was mismeasured.** de Mel, McKenzie & Woodruff (2009, *JDE*) validated enterprise survey instruments against observers visiting firms 15-16 times a month. Firms underreport revenues by roughly 30%, account diaries move reported revenues and expenses but not profits, and **asking profit directly is more accurate than detailed revenue-minus-expense elicitation**. "Value added per labour hour" required exactly the noisier instrument. Profit is now elicited directly as the primary measure; value added is constructed from physical quantities (kg processed, fuel used, price received) as a secondary check, since processors recall quantities better than money.
+
+**2. Energy outcomes in levels would have been read backwards.** Firm-level rebound combines factor substitution with output expansion, and fuel rebound has been estimated at 24-80% in energy-intensive sectors. A field experiment giving energy audits plus engineer support to Indian manufacturers found firms then used **more** energy, because energy complements other inputs. The Duke/Shell Foundation SunCulture evaluation found solar-pump adopters increased **hired labour** — expanding production, not just reallocating time. So if conversion succeeds here, output expands and total fuelwood spend may rise. Energy is now specified as **cost per kilogramme processed**. A rise in the level alongside expansion is success, and the first draft would have scored it as failure.
+
+**3. The qualitative work was sequenced backwards.** DCE methodology guidance for low-income settings is explicit that secondary literature can suggest attributes but primary formative research is almost always needed to validate them. All 40 interviews sat after the survey. Now split: ~15 formative interviews in M3 to validate and price the attributes, ~25 explanatory interviews in M6.
+
+It also strengthened three things.
+
+**Certification is the conversion pathway.** Ghanaian fisheries policy promotes higher-value market access through hygiene certification, and Chorkor ovens exceed EU PAH limits by seven to ten times while Ahotor ovens cut them. That gives a concrete, measurable chain — oven, PAH, certification, buyer type — instead of generic "market access", and it is a value-chain argument, which is what the theme rewards.
+
+**The sampling frame has named targets.** PAYGO providers (PEG, ZOLA Electric) hold digital client records with installation dates and payment histories — precisely the adoption timing the event study needs. Also: the Association of Ghana Solar Industries, Apex Bank via GEDAP appliance financing, and SNV/USAID Ahotor dissemination records by landing site.
+
+**A theoretical home.** Allcott & Greenstone (2012) on the energy-efficiency gap places the study in mainstream economics rather than only in energy access, and supplies the vocabulary for why conversion fails.
+
+## What the first pass added
 
 Full review in `literature.md`. Four changes it forced:
 
@@ -78,8 +96,11 @@ Full review in `literature.md`. Four changes it forced:
 - **Conversion is endogenous.** Stated plainly in the note rather than hidden.
 - **Stated-preference gap.** The DCE measures intended expansion, not realised expansion. Frame it as constraint ranking, not effect size.
 - **Scoop risk.** Owusu-Sekyere et al. (2024, *Energy Policy*) ran 700 Nigerian MSMEs through propensity-score matching and found solar adoption associated with 23-27% higher monthly earnings. Same method family, adjacent country, two years old. Cite it and differentiate explicitly: they estimate adoption to earnings across general MSMEs; this measures adoption to conversion to value addition inside one value chain, and ranks what closes the gap.
-- **Two chains, four regions** is ambitious on the budget. If costs run over, drop the Northern shea component first — it is the most expensive to reach and the least connected to the export-market mechanism.
+- **Two chains, four regions** is ambitious on the budget. If costs run over, drop the Northern shea component first — it is the most expensive to reach and the least connected to the certification mechanism.
+- **The case for narrowing to fish alone is now stronger.** Certification gives coastal processing a mechanism that cassava and shea cannot match, and a fish-only study is cheaper and tighter. The reason to keep the second chain is the **enterprise-scale variation** the non-linearity hypothesis needs — if the fish sample alone spans enough scale, drop cassava and shea and lose little.
 
 ## Fallback if the frame cannot be secured
 
 If no programme or distributor will share a client list, narrow to coastal fish processing only, where Ahotor oven adopters are geographically concentrated in identifiable landing sites and can be found by cluster enumeration alone. Sample drops to roughly 300, the shea and cassava comparison is lost, and the minimum detectable effect widens to about 0.42 SD — still viable, and cheaper.
+
+Note that enumeration alone loses **adoption dates**, which the event study depends on. Recover them by anchoring to a local event calendar during the interview, and expect the event study to be the weakest of the three strategies in that scenario — the choice experiment and the converter comparison then carry the design.
