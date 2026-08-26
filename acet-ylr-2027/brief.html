@@ -1,0 +1,701 @@
+<title>The Conversion Gap</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+  :root {
+    --ground: #F6F8F7;
+    --surface: #FFFFFF;
+    --surface-sunk: #EDF1EF;
+    --ink: #14201E;
+    --ink-soft: #55635F;
+    --ink-faint: #8A9995;
+    --accent: #0E6E5E;
+    --accent-wash: #DCEBE6;
+    --warn: #A8641C;
+    --warn-wash: #F4E7D6;
+    --rule: #DCE3E0;
+    --rule-strong: #C2CDC9;
+
+    --display: "Spectral", Georgia, "Times New Roman", serif;
+    --body: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #0E1513;
+      --surface: #16201D;
+      --surface-sunk: #111A18;
+      --ink: #E8EDEB;
+      --ink-soft: #97A6A1;
+      --ink-faint: #6C7C77;
+      --accent: #45BCA2;
+      --accent-wash: #10312B;
+      --warn: #D99242;
+      --warn-wash: #33240F;
+      --rule: #24322E;
+      --rule-strong: #33453F;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground: #0E1513;
+    --surface: #16201D;
+    --surface-sunk: #111A18;
+    --ink: #E8EDEB;
+    --ink-soft: #97A6A1;
+    --ink-faint: #6C7C77;
+    --accent: #45BCA2;
+    --accent-wash: #10312B;
+    --warn: #D99242;
+    --warn-wash: #33240F;
+    --rule: #24322E;
+    --rule-strong: #33453F;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 16.5px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 24px 96px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 1080px; margin: 0 auto; }
+
+  /* ---- masthead ---- */
+
+  .masthead {
+    padding: 72px 0 40px;
+    border-bottom: 2px solid var(--ink);
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 22px;
+  }
+
+  h1 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: clamp(2.3rem, 5.4vw, 3.5rem);
+    line-height: 1.08;
+    letter-spacing: -0.017em;
+    text-wrap: balance;
+    margin: 0 0 20px;
+    max-width: 20ch;
+  }
+
+  .standfirst {
+    font-family: var(--display);
+    font-size: clamp(1.05rem, 2vw, 1.2rem);
+    font-style: italic;
+    color: var(--ink-soft);
+    max-width: 56ch;
+    margin: 0;
+  }
+
+  /* ---- metadata strip ---- */
+
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+    margin: 0 0 64px;
+  }
+
+  .fact { background: var(--surface); padding: 18px 20px; }
+
+  .fact dt {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin: 0 0 7px;
+  }
+
+  .fact dd {
+    margin: 0;
+    font-size: 1.02rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .fact dd .sub {
+    display: block;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--ink-soft);
+    margin-top: 3px;
+  }
+
+  .fact.urgent dd { color: var(--warn); }
+
+  /* ---- sections ---- */
+
+  section { margin: 0 0 68px; }
+
+  .sec-head {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin: 0 0 26px;
+    padding-bottom: 11px;
+    border-bottom: 1px solid var(--rule-strong);
+  }
+
+  .sec-head h2 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: clamp(1.45rem, 3vw, 1.85rem);
+    letter-spacing: -0.012em;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .sec-head .tag {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-left: auto;
+    white-space: nowrap;
+  }
+
+  h3 {
+    font-family: var(--body);
+    font-weight: 600;
+    font-size: 1.02rem;
+    letter-spacing: -0.005em;
+    margin: 34px 0 10px;
+  }
+
+  p { margin: 0 0 17px; max-width: 68ch; }
+  .lede { font-size: 1.08rem; }
+  strong { font-weight: 600; }
+  em { font-style: italic; }
+
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  /* ---- pull statement ---- */
+
+  .thesis {
+    background: var(--accent-wash);
+    border-left: 3px solid var(--accent);
+    padding: 24px 28px;
+    margin: 28px 0;
+    max-width: 68ch;
+  }
+
+  .thesis p {
+    font-family: var(--display);
+    font-size: 1.15rem;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  /* ---- tables ---- */
+
+  .scroll { overflow-x: auto; margin: 24px 0; border: 1px solid var(--rule); background: var(--surface); }
+
+  table { border-collapse: collapse; width: 100%; font-size: 0.925rem; min-width: 480px; }
+
+  th, td {
+    text-align: left;
+    padding: 12px 18px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  thead th {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    background: var(--surface-sunk);
+    white-space: nowrap;
+  }
+
+  tbody tr:last-child td { border-bottom: none; }
+  .num { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .total td { font-weight: 600; background: var(--surface-sunk); border-top: 2px solid var(--rule-strong); }
+  .strike { color: var(--ink-faint); text-decoration: line-through; }
+
+  /* ---- figure ---- */
+
+  figure { margin: 32px 0; }
+
+  .figbox {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    padding: 28px 24px 22px;
+    overflow-x: auto;
+  }
+
+  .figbox svg { display: block; width: 100%; min-width: 560px; height: auto; }
+
+  figcaption {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    margin-top: 12px;
+    max-width: 68ch;
+  }
+
+  /* ---- concept note ---- */
+
+  .note {
+    background: var(--surface);
+    border: 1px solid var(--rule-strong);
+    padding: 40px clamp(24px, 4vw, 52px) 44px;
+  }
+
+  .note-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    padding-bottom: 20px;
+    margin-bottom: 28px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .note-meta .ok { color: var(--accent); }
+
+  .note h3.note-title {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: clamp(1.35rem, 2.8vw, 1.65rem);
+    line-height: 1.22;
+    letter-spacing: -0.012em;
+    margin: 0 0 26px;
+    max-width: 30ch;
+  }
+
+  .note h4 {
+    font-family: var(--mono);
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 30px 0 9px;
+  }
+
+  .note h4:first-of-type { margin-top: 0; }
+  .note p { max-width: 66ch; }
+  .note .q { font-family: var(--display); font-size: 1.12rem; font-weight: 600; }
+
+  /* ---- checklist ---- */
+
+  .checks { list-style: none; padding: 0; margin: 0; display: grid; gap: 1px; background: var(--rule); border: 1px solid var(--rule); }
+
+  .checks li {
+    background: var(--surface);
+    padding: 14px 18px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    font-size: 0.95rem;
+  }
+
+  .box {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 500;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--rule-strong);
+    margin-top: 2px;
+  }
+
+  .checks li.done .box { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+  :root[data-theme="dark"] .checks li.done .box { color: #0E1513; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .checks li.done .box { color: #0E1513; } }
+  .checks li.done .label { color: var(--ink-soft); }
+  .checks .hint { display: block; font-size: 0.82rem; color: var(--ink-faint); margin-top: 2px; }
+
+  /* ---- open questions ---- */
+
+  .asks { display: grid; gap: 14px; margin: 24px 0 0; }
+
+  .ask {
+    background: var(--warn-wash);
+    border-left: 3px solid var(--warn);
+    padding: 16px 20px;
+  }
+
+  .ask p { margin: 0; max-width: 66ch; font-size: 0.95rem; }
+  .ask p + p { margin-top: 8px; }
+  .ask .who { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--warn); display: block; margin-bottom: 6px; }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    padding-top: 22px;
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    max-width: 68ch;
+  }
+
+  @media (max-width: 640px) {
+    body { padding: 0 18px 64px; font-size: 16px; }
+    .masthead { padding-top: 48px; }
+    .note { padding: 28px 20px 32px; }
+    .sec-head { flex-wrap: wrap; }
+    .sec-head .tag { margin-left: 0; flex-basis: 100%; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">ACET Young Leaders in Research · 2027 Cohort</p>
+    <h1>The Conversion Gap</h1>
+    <p class="standfirst">Green industrial policy counts equipment delivered. Nobody counts what enters production. A submission built to measure the difference.</p>
+  </header>
+
+  <dl class="facts">
+    <div class="fact urgent">
+      <dt>Deadline</dt>
+      <dd><span id="dl-days">7 Sept 2026</span><span class="sub">Closes 7 September 2026</span></dd>
+    </div>
+    <div class="fact">
+      <dt>Theme</dt>
+      <dd>Green Industrial Transformation<span class="sub">One of three</span></dd>
+    </div>
+    <div class="fact">
+      <dt>Grant ceiling</dt>
+      <dd>USD 15,000<span class="sub">Budgeted 14,300</span></dd>
+    </div>
+    <div class="fact">
+      <dt>Duration</dt>
+      <dd>12 months<span class="sub">From 1 Jan 2027</span></dd>
+    </div>
+    <div class="fact">
+      <dt>Concept note</dt>
+      <dd>694 / 800 words<span class="sub">Draft complete</span></dd>
+    </div>
+  </dl>
+
+  <section>
+    <div class="sec-head">
+      <h2>The strategic call</h2>
+      <span class="tag">Framing</span>
+    </div>
+
+    <p class="lede">Kofi Amanor's memo closed on a conditional: the green-smart framing is stronger for a climate-development funder, while clean-cooking-only stays more competitive for health, gender, or energy-access grants. ACET's three themes are Regional Integration, Innovation and Digital Policy, and Green Industrial Transformation. The conditional resolves cleanly — <strong>the green framing wins, and clean-cooking-only would be the weaker submission.</strong></p>
+
+    <p>But there is a second problem the memo does not address. ACET describes this theme as <em>climate-smart, circular, value-adding production and resilient supply chains</em>, with sub-areas covering green industrial policy, sustainable manufacturing, green jobs and green value chains. Every one of those is about production, firms and value chains. The memo is framed almost entirely at the level of household livelihoods — time use, unpaid domestic work, household income portfolios. To a reviewer sorting proposals against this theme, that is a thematic near-miss however well the study is designed.</p>
+
+    <p>The fix is already in the memo: its recommended narrowing to women in food processing and trading. Agro-processing <em>is</em> value-adding production. But it only works if the unit of analysis and the vocabulary move with it.</p>
+
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr><th>Memo framing</th><th>ACET-facing framing</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Household livelihood transition</td><td>Micro-enterprise formation and productivity</td></tr>
+          <tr><td>Released time from domestic work</td><td>Labour productivity in processing</td></tr>
+          <tr><td>Household income diversification</td><td>Value addition and market participation</td></tr>
+          <tr><td>Post-harvest losses</td><td>Green value chain efficiency</td></tr>
+          <tr><td>Women's paid hours</td><td>Green jobs, women's enterprise entry</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>Same study, same mechanisms, same data. But <em>do green technologies move informal food processors from subsistence into market-oriented value-adding production?</em> is a Green Industrial Transformation question. <em>Does solar reduce women's unpaid domestic hours?</em> is not — for this funder.</p>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>What the study measures</h2>
+      <span class="tag">Thesis</span>
+    </div>
+
+    <p>Ghana's Renewable Energy Master Plan, donor fisheries programmes and commercial solar distributors all report the same kind of number: units installed, ovens disseminated, cold storage financed. That number is a procurement outcome. Industrial transformation happens three steps later.</p>
+
+    <figure>
+      <div class="figbox">
+        <svg viewBox="0 0 720 250" role="img" aria-label="Four stages from units distributed to value added in wider markets, with decreasing bar heights. Only the first stage is covered by a bracket labelled 'what adoption statistics report'; the remaining three stages fall under a bracket labelled 'unmeasured'.">
+          <g font-family="IBM Plex Sans, sans-serif">
+            <!-- baseline -->
+            <line x1="30" y1="150" x2="700" y2="150" stroke="var(--rule-strong)" stroke-width="1"/>
+
+            <!-- stage 1: measured -->
+            <rect x="40" y="40" width="130" height="110" fill="var(--accent)"/>
+            <text x="105" y="172" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--ink)">Units distributed</text>
+            <text x="105" y="189" text-anchor="middle" font-size="11" fill="var(--ink-soft)">Equipment handed over</text>
+
+            <!-- stage 2 -->
+            <rect x="210" y="64" width="130" height="86" fill="var(--accent)" opacity="0.44"/>
+            <text x="275" y="172" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--ink)">Still functioning</text>
+            <text x="275" y="189" text-anchor="middle" font-size="11" fill="var(--ink-soft)">Maintained, in repair</text>
+
+            <!-- stage 3 -->
+            <rect x="380" y="88" width="130" height="62" fill="var(--accent)" opacity="0.30"/>
+            <text x="445" y="172" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--ink)">Used productively</text>
+            <text x="445" y="189" text-anchor="middle" font-size="11" fill="var(--ink-soft)">Production, not consumption</text>
+
+            <!-- stage 4 -->
+            <rect x="550" y="108" width="130" height="42" fill="var(--accent)" opacity="0.18"/>
+            <text x="615" y="172" text-anchor="middle" font-size="12.5" font-weight="600" fill="var(--ink)">Value added</text>
+            <text x="615" y="189" text-anchor="middle" font-size="11" fill="var(--ink-soft)">Output reaching wider markets</text>
+
+            <!-- bracket: measured -->
+            <path d="M40 208 L40 215 L170 215 L170 208" fill="none" stroke="var(--accent)" stroke-width="1.5"/>
+            <text x="105" y="234" text-anchor="middle" font-size="10.5" font-family="IBM Plex Mono, monospace" letter-spacing="0.06em" fill="var(--accent)">WHAT POLICY REPORTS</text>
+
+            <!-- bracket: unmeasured -->
+            <path d="M210 208 L210 215 L680 215 L680 208" fill="none" stroke="var(--warn)" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <text x="445" y="234" text-anchor="middle" font-size="10.5" font-family="IBM Plex Mono, monospace" letter-spacing="0.06em" fill="var(--warn)">UNMEASURED</text>
+          </g>
+        </svg>
+      </div>
+      <figcaption>Bar heights are illustrative of the shape of the problem, not findings — establishing the actual attrition at each step is what the study does. The gap between the solid bracket and the dashed one is the contribution.</figcaption>
+    </figure>
+
+    <div class="thesis">
+      <p>Adoption is a procurement outcome. Industrial transformation requires that the technology raise productivity, add value and move output into wider markets. Policy cannot price what it cannot see.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Why the factorial RCT had to go</h2>
+      <span class="tag">Design</span>
+    </div>
+
+    <p>The memo proposed a five-arm factorial trial distributing solar refrigeration, dryers and processing equipment: control, labour-saving, productive-use, combined bundle, and combined-plus. It is the right study. It is not a study this call can fund.</p>
+
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr><th>Constraint</th><th>Proposed design</th><th>This call</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Budget</strong></td>
+            <td>Five arms distributing capital equipment; a single solar cold-storage unit runs into thousands of dollars</td>
+            <td class="num">USD 15,000</td>
+          </tr>
+          <tr>
+            <td><strong>Duration</strong></td>
+            <td>Adoption → sustained use → productive use → livelihood transition → structural change; two to three years to materialise</td>
+            <td class="num">12 months</td>
+          </tr>
+          <tr>
+            <td><strong>Data rounds</strong></td>
+            <td>Baseline, midline, endline</td>
+            <td class="num">One</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>The pivot that rescues it</h3>
+
+    <p>The sharpest question in the memo — <em>why do some adopters convert to productive use while others do not?</em> — turns out to be both the most original and the most affordable, because it changes what has to be identified.</p>
+
+    <p>A conventional adopters-versus-non-adopters comparison has to defeat selection into adoption. On a cross-section with no baseline and no existing data, that is unwinnable. Sampling <strong>only adopters</strong>, and comparing those who converted to productive use against those who did not, holds adoption constant and sidesteps the problem entirely.</p>
+
+    <p>This does not make conversion exogenous — the same unobservables plausibly drive both. So the note claims a <strong>measurement and diagnostic</strong> contribution rather than an impact estimate. That is honest, defensible, and still novel: no dataset currently reports a conversion rate.</p>
+
+    <h3>Three strategies, and what each can carry</h3>
+
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr><th>Strategy</th><th>Identifies</th><th>Strength</th><th>Cost</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Discrete choice experiment</strong><br><span style="color:var(--ink-soft);font-size:0.88em">Randomised support packages</span></td>
+            <td>Which complementary input drives intended expansion</td>
+            <td style="color:var(--accent);font-weight:600">Clean causal</td>
+            <td class="num">~0</td>
+          </tr>
+          <tr>
+            <td><strong>Retrospective event study</strong><br><span style="color:var(--ink-soft);font-size:0.88em">Enterprise fixed effects</span></td>
+            <td>Within-enterprise change around adoption timing</td>
+            <td>Moderate — recall bias</td>
+            <td class="num">~0</td>
+          </tr>
+          <tr>
+            <td><strong>Converter comparison</strong><br><span style="color:var(--ink-soft);font-size:0.88em">Adoption held constant</span></td>
+            <td>Correlates of conversion</td>
+            <td>Diagnostic</td>
+            <td class="num">~0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>The discrete choice experiment is what makes this a research design rather than a survey. It is genuinely experimental, it costs nothing beyond instrument development, and it yields a quotable policy result: the ranked marginal willingness to expand production per complementary input — finance, technical skills, market linkage, after-sales service.</p>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>The concept note</h2>
+      <span class="tag">Submission-ready · 694 words</span>
+    </div>
+
+    <div class="note">
+      <div class="note-meta">
+        <span class="ok">694 / 800 words</span>
+        <span>Theme: Green Industrial Transformation</span>
+        <span>Add affiliation before submitting</span>
+      </div>
+
+      <h3 class="note-title">Adoption Is Not Transformation: Green Technology and Value Addition in Ghana's Food Processing Micro-Enterprises</h3>
+
+      <h4>The policy problem</h4>
+      <p>Africa's green industrial policy is counted in units distributed. Ghana's Renewable Energy Master Plan, donor fisheries programmes and commercial solar distributors report dryers installed, fuel-efficient ovens disseminated and cold storage financed. None of these figures reveal whether the equipment still functions, whether it is used for production rather than household consumption, or whether it has changed what an enterprise makes and where it sells. Adoption is a procurement outcome. Industrial transformation requires that technology raise productivity, add value and move output into wider markets. The distance between the two is unmeasured, and policy cannot price what it cannot see.</p>
+
+      <h4>Research question</h4>
+      <p class="q">Conditional on adoption, what converts green processing technology into value addition — and which complementary input binds?</p>
+      <p>Three sub-questions follow. What share of adopters achieve sustained productive use, and how large is the productivity gap between converters and non-converters? Do labour-saving technologies (fuel-efficient ovens, solar water pumps) and productive-use technologies (solar dryers, solar refrigeration, powered milling) differ in conversion rates? Which complementary input — working capital, technical and maintenance skills, market linkage, or after-sales service — most raises an adopter's willingness to expand production?</p>
+
+      <h4>Contribution</h4>
+      <p>This study does not estimate the average treatment effect of technology provision; that requires an equipment-randomised trial beyond the scale of any early-career grant. It answers a prior question that no existing dataset addresses: among enterprises that already hold the equipment, what separates those producing industrial output from those producing none? It delivers the first measured conversion rate for green processing technology in Ghana, and an experimentally identified ranking of the constraints that block conversion.</p>
+
+      <h4>Setting and data</h4>
+      <p>Two women-dominated value chains with active green technology diffusion: coastal fish smoking and processing (Central and Western regions), where fuel-efficient Ahotor ovens cut fuelwood use and lower polycyclic aromatic hydrocarbon levels enough to affect eligibility for higher-value and export markets; and inland cassava and shea processing (Eastern and Northern regions), where solar drying and powered milling substitute for open-air drying and manual work.</p>
+      <p>Primary collection from 500 processing enterprises — approximately 300 adopters with adoption dates spanning 2022–2026, and 200 non-adopters in the same production clusters — drawn from distributor and programme client lists supplemented by cluster enumeration. Forty in-depth interviews follow the survey.</p>
+
+      <h4>Identification</h4>
+      <p>Three complementary strategies. First, a retrospective enterprise panel: adoption dates and discrete, well-recalled outcomes (months operated per year, market channels used, paid workers hired, equipment functioning) support an event study with enterprise fixed effects around the timing of adoption. Second, a converter/non-converter comparison holding adoption constant, which removes selection into adoption while remaining explicitly diagnostic rather than causal. Third — and cleanly experimental — a discrete choice experiment embedded in the survey, randomising support packages across finance, training, market-linkage and service attributes to identify which complementary input drives intended expansion. Three hundred adopters across eight choice tasks yield 2,400 choice observations, ample for mixed logit estimation.</p>
+
+      <h4>Outcomes</h4>
+      <p>Primary: enterprise value added per hour of processing labour. Secondary: sustained productive use; market channel reach beyond the immediate community; months of operation per year; paid employment created; spoilage and post-harvest loss; fuelwood and energy expenditure; and women's control over enterprise revenue. With roughly 165 converters against 135 non-converters, the design detects productivity differences of 0.33 standard deviations at 80% power.</p>
+
+      <h4>Policy relevance</h4>
+      <p>Ghana and its development partners subsidise green equipment acquisition. If a substantial share of subsidised equipment never enters production, the binding policy question is not how to distribute more units but how to bundle distribution with the complementary input that converts them. This study replaces adoption counts with a conversion metric that green industrial policy can actually target, and identifies experimentally which bundle to fund. It speaks directly to green value chains, green jobs, and the design of green industrial policy instruments.</p>
+
+      <h4>Feasibility</h4>
+      <p>Twelve months: ethics clearance and instrument design (M1–2), pilot and enumerator training (M3), survey fieldwork (M4–5), qualitative fieldwork (M6), analysis (M7–8), working paper (M9–10), Accra validation workshop and policy brief (M11), dissemination (M12). Budgeted at USD 14,300 against the USD 15,000 ceiling.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Budget</h2>
+      <span class="tag">USD 14,300 of 15,000</span>
+    </div>
+
+    <p>Planning estimates for Ghanaian field research. Replace with quotes from your institution or field partner before submitting.</p>
+
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr><th>Line</th><th>Detail</th><th class="num">USD</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Ethics clearance</td><td>Institutional review board, Ghanaian institution</td><td class="num">400</td></tr>
+          <tr><td>Instrument development</td><td>Design, translation (Twi, Fante, Ewe, Dagbani), CAPI programming</td><td class="num">500</td></tr>
+          <tr><td>Pilot</td><td>2 days, 4 enumerators, ~40 interviews, revision</td><td class="num">600</td></tr>
+          <tr><td>Enumerator training</td><td>3 days, 10 enumerators + 2 supervisors</td><td class="num">800</td></tr>
+          <tr><td>Fieldwork — enumerators</td><td>10 × 12 days × 30</td><td class="num">3,600</td></tr>
+          <tr><td>Fieldwork — supervisors</td><td>2 × 14 days × 50</td><td class="num">1,400</td></tr>
+          <tr><td>Transport and fuel</td><td>2 vehicles, coastal and inland rounds</td><td class="num">1,600</td></tr>
+          <tr><td>Accommodation, per diem</td><td>Field team, 14 days</td><td class="num">1,500</td></tr>
+          <tr><td>Devices, connectivity</td><td>Tablet rental, data bundles</td><td class="num">400</td></tr>
+          <tr><td>Qualitative fieldwork</td><td>40 interviews, transcription, translation</td><td class="num">1,000</td></tr>
+          <tr><td>Research assistant</td><td>Cleaning and analysis, 6 weeks part-time</td><td class="num">900</td></tr>
+          <tr><td>Respondent tokens</td><td>500 respondents, nominal</td><td class="num">300</td></tr>
+          <tr><td>Dissemination</td><td>Policy brief, Accra validation workshop</td><td class="num">600</td></tr>
+          <tr><td>Contingency</td><td>~5%</td><td class="num">700</td></tr>
+          <tr><td class="strike">Equipment</td><td class="strike">Solar dryers, ovens, refrigeration, milling</td><td class="num strike">0</td></tr>
+          <tr class="total"><td>Total</td><td>Fieldwork is 58% of spend</td><td class="num">14,300</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>The struck line is the single largest departure from the memo, and the reason the study fits the envelope. No equipment is purchased or distributed.</p>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>What's left</h2>
+      <span class="tag">12 days</span>
+    </div>
+
+    <h3>Submission checklist</h3>
+    <ul class="checks">
+      <li class="done"><span class="box">✓</span><span class="label">Concept note — 694 of 800 words<span class="hint">Drafted; add your affiliation</span></span></li>
+      <li><span class="box"></span><span class="label">Statement of purpose — max 500 words<span class="hint">Motivation, goals, leadership potential — needs your biography</span></span></li>
+      <li><span class="box"></span><span class="label">CV<span class="hint">Academic, professional and research experience</span></span></li>
+      <li><span class="box"></span><span class="label">Two academic or professional references<span class="hint">Longest-lead item — start these first</span></span></li>
+    </ul>
+
+    <h3>Eligibility, to confirm</h3>
+    <ul class="checks">
+      <li><span class="box"></span><span class="label">African national, or resident based in Africa</span></li>
+      <li><span class="box"></span><span class="label">35 or younger as of 1 January 2027</span></li>
+      <li><span class="box"></span><span class="label">Hold or enrolled in a Master's degree or higher</span></li>
+      <li><span class="box"></span><span class="label">Background in economics or a related analytical field</span></li>
+    </ul>
+
+    <h3>Open items</h3>
+
+    <div class="asks">
+      <div class="ask">
+        <span class="who">Highest priority</span>
+        <p><strong>Secure a sampling frame.</strong> With no existing data, the frame has to be built — and the design leans on programme or distributor client lists to find adopters with datable adoption. A named, secured partner materially strengthens the note.</p>
+        <p>If no list can be secured, the fallback is coastal fish processing alone, where Ahotor oven adopters cluster at identifiable landing sites and can be found by enumeration. Sample drops to ~300 and the detectable effect widens to about 0.42 SD — still viable, and cheaper.</p>
+      </div>
+      <div class="ask">
+        <span class="who">Check before submitting</span>
+        <p><strong>Adoption timing.</strong> The event study needs adoption dates spread across 2022–2026. If adoption turns out to be bunched in one programme year, that strategy collapses and the choice experiment carries the design on its own.</p>
+      </div>
+      <div class="ask">
+        <span class="who">Verify</span>
+        <p><strong>The official call page.</strong> Deadline and document specifications here came from aggregator sites — acetforafrica.org was unreachable from this session. Confirm directly before relying on them.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p style="margin:0">Design reasoning, fallbacks and the recall-instrument specification are in <code>design-note.md</code>; full budget and schedule in <code>budget-and-timeline.md</code>. Both on branch <code>claude/kofi-amanor-email-f2s1ki</code>.</p>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    try {
+      var deadline = new Date('2026-09-07T23:59:59Z');
+      var days = Math.ceil((deadline - new Date()) / 86400000);
+      var el = document.getElementById('dl-days');
+      if (!el) return;
+      if (days > 1) el.textContent = days + ' days left';
+      else if (days === 1) el.textContent = '1 day left';
+      else if (days === 0) el.textContent = 'Closes today';
+      else el.textContent = 'Closed';
+    } catch (e) { /* keep the static date */ }
+  })();
+</script>

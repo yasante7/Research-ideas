@@ -40,6 +40,7 @@ The other two themes are Regional Integration and Innovation and Digital Policy.
 | `concept-note.md` | Submission-ready, 694 words |
 | `design-note.md` | Internal — why this design, what it trades away, fallbacks |
 | `budget-and-timeline.md` | USD 14,300 against the 15,000 ceiling; 12-month schedule |
+| `brief.html` | Published brief — [view](https://claude.ai/code/artifact/d3523e5f-e53c-4358-9f26-69ff8acb5308) |
 
 ## Before submitting
 
