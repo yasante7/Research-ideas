@@ -27,7 +27,7 @@ The other two themes are Regional Integration and Innovation and Digital Policy.
 
 ## Submission checklist
 
-- [x] Concept note — max 800 words → `concept-note-sm.docx` (794 words)
+- [x] Concept note, max 800 words, `concept-note-sm.docx` (774 words of body text)
 - [ ] Statement of purpose — max 500 words (motivation, goals, leadership potential)
 - [ ] CV — academic, professional and research experience
 - [ ] Reference 1 — academic or professional
@@ -37,9 +37,10 @@ The other two themes are Regional Integration and Innovation and Digital Policy.
 
 | File | Purpose |
 |---|---|
-| `concept-note-sm.md` | **Submission version** — clean prose, 794 words |
-| `concept-note-sm.docx` | The same, as Word — this is the file you submit |
-| `concept-note.md` | Working version, 784 words |
+| `concept-note-sm.md` | **Submission version**, plain academic prose, 774 body words |
+| `concept-note-sm.docx` | The same, as Word. This is the file you submit |
+| `concept-note.md` | Earlier working version, kept for reference |
+| `supervisor-discussion.md` | Script for the conversation with Kofi Amanor |
 | `literature.md` | Evidence review, two passes — what is established, what is open, scoop risk |
 | `design-note.md` | Internal — why this design, what it trades away, fallbacks |
 | `budget-and-timeline.md` | USD 14,300 against the 15,000 ceiling; 12-month schedule |

@@ -51,7 +51,7 @@ children.push(new Paragraph({
 }));
 
 // Metadata block
-children.push(meta('Applicant', '[Your name] · [Institutional affiliation]'));
+children.push(meta('Applicant', '[Your name], [Institutional affiliation]'));
 children.push(meta('Programme', 'ACET Young Leaders in Research, 2027 Cohort'));
 children.push(new Paragraph({
   spacing: { after: 260, line: LINE },
