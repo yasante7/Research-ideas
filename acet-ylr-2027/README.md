@@ -27,7 +27,7 @@ The other two themes are Regional Integration and Innovation and Digital Policy.
 
 ## Submission checklist
 
-- [x] Concept note — max 800 words → `concept-note.md` (784 words)
+- [x] Concept note — max 800 words → `concept-note-sm.docx` (794 words)
 - [ ] Statement of purpose — max 500 words (motivation, goals, leadership potential)
 - [ ] CV — academic, professional and research experience
 - [ ] Reference 1 — academic or professional
@@ -37,7 +37,9 @@ The other two themes are Regional Integration and Innovation and Digital Policy.
 
 | File | Purpose |
 |---|---|
-| `concept-note.md` | Submission-ready, 784 words |
+| `concept-note-sm.md` | **Submission version** — clean prose, 794 words |
+| `concept-note-sm.docx` | The same, as Word — this is the file you submit |
+| `concept-note.md` | Working version, 784 words |
 | `literature.md` | Evidence review, two passes — what is established, what is open, scoop risk |
 | `design-note.md` | Internal — why this design, what it trades away, fallbacks |
 | `budget-and-timeline.md` | USD 14,300 against the 15,000 ceiling; 12-month schedule |
@@ -47,5 +49,5 @@ The other two themes are Regional Integration and Innovation and Digital Policy.
 
 1. **Confirm the sampling frame.** Approach in this order: pay-as-you-go solar providers (PEG, ZOLA Electric — their client records carry installation dates), the Association of Ghana Solar Industries, Apex Bank via GEDAP appliance financing, and SNV / USAID Ahotor programmes. A named, secured partner materially strengthens the note.
 2. **Replace the budget rates** with quotes from your institution or field partner.
-3. **Add your affiliation** to the concept note header.
+3. **Fill the applicant block** at the top of `concept-note-sm.docx` — name and institutional affiliation are placeholders.
 4. **Start the two references now** — they are the longest-lead item.
