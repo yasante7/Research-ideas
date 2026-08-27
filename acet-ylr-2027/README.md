@@ -1,4 +1,4 @@
-# ACET Young Leaders in Research — 2027 Cohort
+# ACET Young Leaders in Research, 2027 Cohort
 
 Application materials and design reasoning.
 
@@ -6,7 +6,7 @@ Application materials and design reasoning.
 
 **7 September 2026.** Applications opened 10 August 2026; programme starts 1 January 2027.
 
-Verify against the official page — [acetforafrica.org/young-leaders-in-research](https://acetforafrica.org/young-leaders-in-research/) — as these details were gathered from aggregator sites.
+Verify against the official page, [acetforafrica.org/young-leaders-in-research](https://acetforafrica.org/young-leaders-in-research/), as these details were gathered from aggregator sites.
 
 ## Grant
 
@@ -14,7 +14,7 @@ Up to **USD 15,000** over 12 months, with mentorship from ACET Senior Fellows, p
 
 ## Theme
 
-**Green Industrial Transformation** — described by ACET as climate-smart, circular, value-adding production and resilient supply chains, aligning finance, technology and skills. Sub-areas include green industrial policy, clean technologies, renewable energy and industry, sustainable manufacturing, green jobs, low-carbon development and green value chains.
+**Green Industrial Transformation**, described by ACET as climate-smart, circular, value-adding production and resilient supply chains, aligning finance, technology and skills. Sub-areas include green industrial policy, clean technologies, renewable energy and industry, sustainable manufacturing, green jobs, low-carbon development and green value chains.
 
 The other two themes are Regional Integration and Innovation and Digital Policy.
 
@@ -27,28 +27,30 @@ The other two themes are Regional Integration and Innovation and Digital Policy.
 
 ## Submission checklist
 
-- [x] Concept note, max 800 words, `concept-note-sm.docx` (774 words of body text)
-- [ ] Statement of purpose — max 500 words (motivation, goals, leadership potential)
-- [ ] CV — academic, professional and research experience
-- [ ] Reference 1 — academic or professional
-- [ ] Reference 2 — academic or professional
+- [x] Concept note, max 800 words, `concept-note-sm.docx` (795 words of body text)
+- [ ] Statement of purpose, max 500 words (motivation, goals, leadership potential)
+- [ ] CV, academic, professional and research experience
+- [ ] Reference 1, academic or professional
+- [ ] Reference 2, academic or professional
 
 ## Files
 
 | File | Purpose |
 |---|---|
-| `concept-note-sm.md` | **Submission version**, plain academic prose, 774 body words |
+| `concept-note-sm.md` | **Submission version**, plain academic prose, 795 body words |
 | `concept-note-sm.docx` | The same, as Word. This is the file you submit |
 | `concept-note.md` | Earlier working version, kept for reference |
 | `supervisor-discussion.md` | Script for the conversation with Kofi Amanor |
-| `literature.md` | Evidence review, two passes — what is established, what is open, scoop risk |
-| `design-note.md` | Internal — why this design, what it trades away, fallbacks |
+| `literature.md` | Evidence review, two passes, what is established, what is open, scoop risk |
+| `ahotor-baseline-evidence.md` | Extraction from the SNV/SFMP Ahotor performance evaluation |
+| `design-note.md` | Internal, why this design, what it trades away, fallbacks |
 | `budget-and-timeline.md` | USD 14,300 against the 15,000 ceiling; 12-month schedule |
-| `brief.html` | Published brief — [view](https://claude.ai/code/artifact/d3523e5f-e53c-4358-9f26-69ff8acb5308) |
+| `brief.html` | Published brief, [view](https://claude.ai/code/artifact/d3523e5f-e53c-4358-9f26-69ff8acb5308) |
 
 ## Before submitting
 
-1. **Confirm the sampling frame.** Approach in this order: pay-as-you-go solar providers (PEG, ZOLA Electric — their client records carry installation dates), the Association of Ghana Solar Industries, Apex Bank via GEDAP appliance financing, and SNV / USAID Ahotor programmes. A named, secured partner materially strengthens the note.
-2. **Replace the budget rates** with quotes from your institution or field partner.
-3. **Fill the applicant block** at the top of `concept-note-sm.docx` — name and institutional affiliation are placeholders.
-4. **Start the two references now** — they are the longest-lead item.
+1. **Establish how many Ahotor ovens now exist.** The 2017 SNV database lists about 36 units. The design assumes 300 adopters. This decides whether the study is feasible as specified, and it comes before everything else.
+2. **Confirm the sampling frame.** Approach in this order: pay-as-you-go solar providers (PEG, ZOLA Electric, their client records carry installation dates), the Association of Ghana Solar Industries, Apex Bank via GEDAP appliance financing, and SNV / USAID Ahotor programmes. A named, secured partner materially strengthens the note.
+3. **Replace the budget rates** with quotes from your institution or field partner.
+4. **Fill the applicant block** at the top of `concept-note-sm.docx`, name and institutional affiliation are placeholders.
+5. **Start the two references now**, they are the longest-lead item.

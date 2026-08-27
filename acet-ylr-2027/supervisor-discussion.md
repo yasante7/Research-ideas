@@ -92,7 +92,23 @@ Fourth, the outcome I had chosen was mismeasured. De Mel, McKenzie and Woodruff 
 
 **Case six. The cooperative dryer against the individually owned one.** In cassava and shea, solar dryers are often group assets. I want to compare group-owned equipment against individually owned, because the incentive to maintain and use a shared asset is different, and this is where I expect the second chain to earn its place in the study.
 
-For sites, I am looking at landing beaches in the Central and Western regions for the fish component, Elmina, Apam, Moree and Shama being the obvious candidates, and cassava and shea processing in the Eastern and Northern regions for contrast. I have not confirmed programme presence at any of these yet, and that is the first thing I need to do."
+For sites, the SNV performance evaluation confirms where the ovens went: Elmina, Apam, Winneba, Mumford and Moree in the Central Region, and Anlo Beach, Takoradi, Sekondi and Axim in the Western Region, with a few later units in Keta and Aflao in the Volta Region and two inland in Ashanti."
+
+---
+
+## Part 6b. What the SNV evaluation gave me, and what it took away
+
+*[Bring the report. He will respect that you found and read it. Lead with the correction against yourself, not with the wins.]*
+
+"I found the SNV and SFMP performance evaluation of the Ahotor oven, by Avega and Tibu in 2017. It surveyed thirty of the thirty-three oven hosts. Three things in it changed the proposal, and one of them was a correction against myself.
+
+The correction first. I had written that the oven establishes certification eligibility and opens export markets. The measured figures do not support that. The Chorkor deposits polycyclic aromatic hydrocarbons at 298 micrograms per kilogramme and the Ahotor at 59, against a European Union limit of 12. So the oven closes about eighty per cent of the distance to compliance and still leaves the fish five times over the limit. I have rewritten certification as an open question rather than an assumption. I actually think that makes the study stronger, because it is the technology-is-not-enough argument with a hard number on it.
+
+Second, the report already documents the phenomenon I want to measure. Thirty-six per cent of the oven hosts had never used the oven at all. Sixty-four per cent were still smoking on the Chorkor, and only three per cent had stopped. And there is one sentence that is essentially my whole thesis: some of the women were using the Ahotor to smoke fish for their home needs and not for the market, because it gives them healthy fish. Adopted, working, used, and producing nothing for sale.
+
+Third, it tells me why. The implementers wrote that the main reason for non-use was lack of capital to purchase fish. Not training and not market access. Working capital. That gives the choice experiment a prior to test rather than an open field.
+
+It also flipped one of my hypotheses. I had predicted conversion rises with enterprise scale, following Fafchamps. But the report finds large processors cannot use the oven because its capacity is too low, while small processors cannot afford the fish. So the constraint differs at each end and conversion should peak in the middle. I now predict an inverted U, which is more interesting and is grounded in field observation rather than borrowed from Sri Lanka."
 
 ---
 
@@ -100,15 +116,17 @@ For sites, I am looking at landing beaches in the Central and Western regions fo
 
 *[Ask clearly. Do not bury the requests.]*
 
-"Four things.
+"Five things, and the first one may decide whether this study is possible at all.
 
-First, the sampling frame is my biggest risk. I have no existing data, so I have to build the frame. The best sources are pay-as-you-go solar providers, because their client records carry installation dates, which the event study needs. PEG and ZOLA Electric operate here. Beyond them there is the Association of Ghana Solar Industries, Apex Bank through the GEDAP appliance financing, and the SNV and USAID programmes that disseminated Ahotor ovens. If you know anyone at any of these, an introduction would be worth more to this proposal than anything else you could give me.
+First, and most urgently: how many Ahotor ovens actually exist now? The 2017 database lists about thirty-six units. My design assumes three hundred adopters. If dissemination did not scale substantially after the market development work, the sample is not there and I need to know before I submit rather than after. Do you know anyone at SNV or the Fisheries Commission who can tell me the current number?
 
-Second, I need a judgement from you on whether to keep the second value chain. Certification gives fish smoking a mechanism that cassava and shea cannot match, and a fish-only study is cheaper and tighter. The only reason to keep the second chain is the variation in enterprise scale that hypothesis one needs. If you think the fish sample alone spans enough scale, I will drop the others.
+Second, the sampling frame. I have no existing data, so I have to build the frame. The best sources are pay-as-you-go solar providers, because their client records carry installation dates, which the event study needs. PEG and ZOLA Electric operate here. Beyond them there is the Association of Ghana Solar Industries, Apex Bank through the GEDAP appliance financing, and the SNV and USAID programmes that disseminated Ahotor ovens. If you know anyone at any of these, an introduction would be worth more to this proposal than anything else you could give me.
 
-Third, would you be willing to act as one of my two referees? The application needs two, and they are the longest lead item.
+Third, I need a judgement from you on whether to keep the second value chain. Certification gives fish smoking a mechanism that cassava and shea cannot match, and a fish-only study is cheaper and tighter. The only reason to keep the second chain is the variation in enterprise scale that hypothesis one needs. If you think the fish sample alone spans enough scale, I will drop the others.
 
-Fourth, I would value your read on whether the diagnostic framing is too modest. I am not claiming causal impact, and I want to know if you think that reads as rigour or as timidity to this kind of panel."
+Fourth, would you be willing to act as one of my two referees? The application needs two, and they are the longest lead item.
+
+Fifth, I would value your read on whether the diagnostic framing is too modest. I am not claiming causal impact, and I want to know if you think that reads as rigour or as timidity to this kind of panel."
 
 ---
 
@@ -117,9 +135,10 @@ Fourth, I would value your read on whether the diagnostic framing is too modest.
 *[If the conversation goes well, these are worth his time. Ask them as genuine questions.]*
 
 1. "Is there a Ghanaian dataset on processing enterprises that I have missed?"
-2. "Does the certification pathway hold up in practice, or is certification effectively out of reach for a processor at this scale regardless of the oven?"
-3. "Am I right that the conversion rate is genuinely unmeasured, or is there sector work I should know about?"
-4. "If this does not get funded, is it publishable as a smaller piece on its own?"
+2. "The women mix smoked fish from both ovens before selling, so I cannot attribute a price premium at the point of sale. Would you capture price at batch level before mixing, or drop the premium and rely on quantity and cost?"
+3. "Does the certification pathway hold up in practice, or is certification effectively out of reach for a processor at this scale regardless of the oven?"
+4. "Am I right that the conversion rate is genuinely unmeasured, or is there sector work I should know about?"
+5. "If this does not get funded, is it publishable as a smaller piece on its own?"
 
 ---
 
